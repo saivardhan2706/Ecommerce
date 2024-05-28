@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    ;
+    font-family:'Poppins',sans-serif;
+    background-color: blanchedalmond;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width:0;
+height: 2.5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+#image{
+    height: 290px;
+    width: 190px;
+   background-image: url(t-shirt.jpg); 
+   background-size: cover;
+   border-radius: 10px;
+   position: relative;
+   left: 100px;
+   top: 100px;
+   left: 100px;
+}
+.right{
+    position: relative;
+    left: 500px;
+    bottom: 150px;
+    cursor: pointer;
+    font-weight:700px;
+    
+}
+.ratings{
+    color: orange;
+}
+.price{
+    position: relative;
+    left: 500px;
+    bottom: 130px;
+
+}
+.size{
+    position: relative;
+    left: 500px;
+    
+    bottom: 120px;
+    display: flex;
+    align-items: center;
+
+}
+.size p{
+    font-size: 20px;
+}
+.psize{
+    width: 40px;
+    border: 2px solid #eea981 ;
+    color: black;
+    margin: 5px;
+}
+.psize.active{
+    border-width: 2pxpx;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.quantity{
+    position: relative
+    ;
+    left: 500px;
+    bottom: 100px;
+}
+.btn-box{
+    position: relative;
+    left: 500px;
+    bottom: 90px;
+}
+.url{
+    font-size: 16px;
+    font-weight: 600px;
+    color:blue;
+    position: relative;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top:50px ;
+    color: rgb(21, 37, 43);
+    position: relative;
+    bottom: 20px;
+
+
+
+
+}
+.quantity p{
+    font-size:18px ;
+    font-weight: 500;
+    position: relative;
+}
+.quantity input{
+    width: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    position: relative;
+    left: 62px;
+    bottom: 20px;
+
+}
+.btn-box{
+    display: flex;
+    margin: 20px 0;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+    position: relative;
+    bottom: 30px;
+}
+.cart-btn{
+    background-color: #ff5e00;
+}
+.buy-btn{
+    background-color: #00b3ff;
+}
